@@ -74,6 +74,12 @@ section {
   flex-direction: column;
 }
 
+.container-services{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 h2>p {
   padding: auto;
   margin: auto;
