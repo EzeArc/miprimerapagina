@@ -2,7 +2,6 @@
 
 body {
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
 }
 
@@ -81,16 +80,18 @@ nav{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
 }
 nav a {
-  color: #fff;
   text-decoration: none;
   padding: 5px;
-}
-
-nav a:hover {
-  color: rgb(186, 119, 250);
-}
+  transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color: violet;
+    box-shadow: #7e009e;
+  }
 
 .navbar ul {
   list-style-type: none;
@@ -106,7 +107,7 @@ nav a:hover {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -177,12 +178,10 @@ form input[type="submit"] {
 
 footer {
   background-color: black;
-  max-height: 100px;
-  padding: 20px;
+  height: 80px;
   text-align: center;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  margin-top: 0;
+  padding: 10px;
 }
 footer>p{
   color: #f0f0f0;
