@@ -1,52 +1,57 @@
-body{
-  margin: 0%;
+/* Estilos generales */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.container-nav {
-  display: flex;
-  flex-direction: column;
-  background-image: url(img/cover.jpg);
-  background-size: contain;
-  background-position: center;
-  height: 300px;
-  width: 100%;
-  color: #fff;
-  text-align: right;
-}
-
-.greeting {
+.container {
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }
 
-.Mylogo {
+.containerVideo {
+  width: 560px;
+  height: 315px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.container-services {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos del encabezado */
+
+.container-nav {
+  background-image: url(img/cover.jpg);
+  background-size: contain;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.listaServices {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 90%;
 }
 
-.Mylogo>img {
-  width: 85px;
-  height: 85px;
-  border-radius: 30px;
-  margin-top: 3%;
-  padding: 25px;
+.Mylogo img {
+  max-width: 200px;
+  height: auto;
 }
 
-/*para darle un estilo de lista y quitarle los márgenes predeterminados*/
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-}
-
-
-/* se muestren en línea y se separen entre sí*/
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-/*estilos a los enlaces <a> para darles un color y un estilo al pasar el cursor por encima*/
 nav a {
   color: #fff;
   text-decoration: none;
@@ -57,120 +62,111 @@ nav a:hover {
   color: rgb(186, 119, 250);
 }
 
-main {
-  display: flexbox;
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
   justify-content: center;
-  margin: 20px;
 }
 
-
-.container {
-  display: grid;
-  justify-content: flex-start;
+.navbar ul li {
+  margin-right: 20px;
 }
 
-h1 {
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilos del contenido principal */
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container-services h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container-services p {
+  margin-bottom: 20px;
+}
+
+.containerVideo video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos del formulario */
+
+form {
+  margin-top: 20px;
   text-align: center;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
+form label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-.container-services{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
-.container-services>p{
-  text-align: center;
-}
-.listaServices{
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-h2>p {
-  padding: auto;
-  margin: auto;
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-.img-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+/* Estilos del pie de página */
 
-img {
-  width: 300px;
-  height: 300px;
-}
-
-.containerVideo {
-  width: 560px;
-  height: 315px;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  padding: 50px;
-}
-
-#myform{
-  display: inline-flexbox;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 50px;
-  padding: 50px;
-}
-
-#name{
-  width: 300px;
-}
-#email{
-  width: 300px;
-}
-#message{
-  height: 300px;
-  width: 500px;
-}
 footer {
   background-color: black;
-  display: flexbox;
-  justify-content: center;
-  height: max-content 200px;
-  margin: 0%;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
-
-footer>p {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-}
-
-footer>div>img {
-  height: 80px;
+footer>p{
+  color: #f0f0f0;
 }
 
 
-
-
-/*cambiar el color de fondo del encabezado en pantallas pequeñas*/
-@media (max-with: 767px) {
+/* Cambiar el color de fondo del encabezado en pantallas pequeñas */
+@media (max-width: 767px) {
   header {
     background-color: #333;
   }
 }
 
-@media (max-with: 767px) {
+/* Cambiar el tamaño de fuente de la navegación en pantallas pequeñas */
+@media (max-width: 767px) {
   nav {
     font-size: 16px;
   }
 }
 
-@media (max-with: 1200px) {
+/* Establecer el ancho máximo del encabezado en 1200px */
+@media (max-width: 1200px) {
   header {
     width: 1200px;
   }
