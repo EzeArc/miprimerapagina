@@ -1,3 +1,7 @@
+body{
+  margin: 0%;
+}
+
 .container-nav {
   display: flex;
   flex-direction: column;
@@ -137,6 +141,7 @@ footer {
   display: flexbox;
   justify-content: center;
   height: max-content 200px;
+  margin: 0%;
 }
 
 footer>p {
