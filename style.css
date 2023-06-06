@@ -114,6 +114,24 @@ img {
   padding: 50px;
 }
 
+#myform{
+  display: inline-flexbox;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 50px;
+  padding: 50px;
+}
+
+#name{
+  width: 300px;
+}
+#email{
+  width: 300px;
+}
+#message{
+  height: 300px;
+  width: 500px;
+}
 footer {
   background-color: black;
   display: flexbox;
