@@ -1,5 +1,4 @@
-
-.container-nav{
+.container-nav {
   display: flex;
   flex-direction: column;
   background-image: url(img/cover.jpg);
@@ -11,11 +10,16 @@
   text-align: right;
 }
 
-.Mylogo{
+.greeting {
+  text-align: center;
+}
+
+.Mylogo {
   display: flex;
   justify-content: space-between;
 }
-.Mylogo>img{
+
+.Mylogo>img {
   width: 85px;
   height: 85px;
   border-radius: 30px;
@@ -60,18 +64,21 @@ main {
   display: grid;
   justify-content: flex-start;
 }
-h1{
-text-align: center;
+
+h1 {
+  text-align: center;
 }
-section{
+
+section {
   display: flex;
   flex-direction: column;
 }
 
-h2>p{
-padding: auto;
-margin: auto;
+h2>p {
+  padding: auto;
+  margin: auto;
 }
+
 .img-container {
   display: flex;
   flex-wrap: wrap;
@@ -86,8 +93,8 @@ img {
 .containerVideo {
   width: 560px;
   height: 315px;
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
   gap: 50px;
   padding: 50px;
 }
@@ -105,8 +112,8 @@ footer>p {
   justify-content: center;
 }
 
-footer>div>img{
-height: 80px;
+footer>div>img {
+  height: 80px;
 }
 
 
