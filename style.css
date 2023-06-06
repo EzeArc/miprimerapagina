@@ -80,6 +80,15 @@ section {
   justify-content: center;
 }
 
+.container-services>p{
+  text-align: center;
+}
+.listaServices{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 h2>p {
   padding: auto;
   margin: auto;
